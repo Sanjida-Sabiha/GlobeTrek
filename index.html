@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrek</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hidden lg:flex justify-between items-center my-5">
+                    <ul class="w-[325px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="#" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Home</a></li>
+                        <li><a href="about.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">About Us</a></li>
+                        <li><a href="package.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Packages</a></li>
+                    </ul>
+                    <a href="#" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <ul class="w-[270px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="blog.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Blog</a></li>
+                        <li><a href="faq.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">FAQs</a></li>
+                        <li><a href="contact.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden flex justify-between items-center mt-5">
+                    <a href="#" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center lg:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="black">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div id="mobileMenu" class="border-b border-b-gray-50 hidden rounded m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-12 z-20 bg-cardBg">
+                        <div class="py-5">
+                            <ul class="dropdown flex flex-col gap-y-4 px-5">
+                                <li><a href="index.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Home</a></li>
+                                <li><a href="about.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">About Us</a></li>
+                                <li><a href="package.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Packages</a></li>
+                                <li><a href="blog.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Blog</a></li>
+                                <li><a href="faq.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">FAQs</a></li>
+                                <li><a href="contact.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section
+    data-aos="fade-down"
+    data-aos-duration="1000"
+    data-aos-offset="20"
+    data-aos-once="true" 
+    class="relative w-auto mx-5 xl:mx-auto md:pt-[441px] pt-[55px] pb-[75px] bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/banner.png');">
+        <div class="container">
+            <div class="flex xl:flex-row flex-col-reverse items-start xl:gap-[140px] md:gap-10 gap-5">
+                <p class="xl:w-300 w-full xl:pt-4 font-Inter font-normal text-lg leading-8 text-btnBg">From scenic escapes to exotic journeys, we craft unforgettable experiences tailored to you.</p>
+                <h1 class="xl:w-850 w-full font-Inter font-medium lg:text-94xl md:text-74xl text-40xl leading-50 md:leading-84 lg:leading-104 text-btnBg">Discover Your Dream <span class="font-Playfair italic">Destination</span> with Us</h1>
+            </div>
+            <div class="mt-12 flex md:flex-row flex-col-reverse justify-between md:items-center md:gap-0 gap-5">
+                <a href="#scroll" class="flex items-center md:justify-normal justify-center gap-4 font-Inter font-normal text-lg leading-8 text-btnBg">
+                    Scroll Down
+                    <svg class="animate-bounce" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17V1M7 17L1 11M7 17L13 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#" class="bg-btnBg text-primaryColor text-center inline-block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 border border-btnBg hover:bg-opacity-5 hover:border-btnBg hover:border-opacity-20 hover:text-white hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">Explore Packages</a>
+                <div class="flex items-center md:justify-normal justify-center gap-[18px]">
+                    <a href="https://www.facebook.com/" target="_blank" class="flex group bg-btnBg bg-opacity-5 border border-btnBg border-opacity-20 rounded-full w-12 h-12 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.34473 8.9995L9.86346 6.104H6.62096V4.225C6.62096 3.433 7.07375 2.6605 8.52608 2.6605H10V0.1955C10 0.1955 8.66262 0 7.38359 0C4.7135 0 2.96826 1.387 2.96826 3.8975V6.1045H0V9H2.96826V16H6.62096V9L9.34473 8.9995Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="flex group bg-btnBg bg-opacity-5 border border-btnBg border-opacity-20 rounded-full w-12 h-12 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.00015 -0.000244141C5.82743 -0.000244141 5.55499 0.0089732 4.70168 0.0478909C3.85016 0.0867371 3.26861 0.221996 2.75973 0.419729C2.23365 0.624177 1.7875 0.897744 1.34275 1.34249C0.897988 1.78723 0.624421 2.23343 0.419997 2.7595C0.222217 3.26836 0.0870051 3.84991 0.0481112 4.70143C0.00919353 5.55474 0 5.82719 0 7.99991C0 10.1726 0.00919353 10.445 0.0481112 11.2983C0.0870051 12.1499 0.222217 12.7314 0.419997 13.2403C0.624445 13.7663 0.898012 14.2125 1.34275 14.6573C1.78752 15.102 2.23365 15.3756 2.75973 15.58C3.26861 15.7778 3.85016 15.913 4.70168 15.9519C5.55499 15.9908 5.82743 16 8.00015 16C10.1728 16 10.4453 15.9908 11.2986 15.9519C12.1501 15.913 12.7317 15.7778 13.2405 15.58C13.7666 15.3756 14.2127 15.102 14.6575 14.6573C15.1023 14.2125 15.3758 13.7663 15.5803 13.2403C15.778 12.7314 15.9133 12.1499 15.9521 11.2983C15.991 10.445 16.0003 10.1726 16.0003 7.99991C16.0003 5.82719 15.991 5.55474 15.9521 4.70143C15.9133 3.84991 15.778 3.26836 15.5803 2.7595C15.3758 2.23343 15.1023 1.78723 14.6575 1.34249C14.2127 0.897744 13.7666 0.624177 13.2405 0.419729C12.7317 0.221996 12.1501 0.0867371 11.2986 0.0478909C10.4453 0.0089732 10.1728 -0.000244141 8.00015 -0.000244141ZM8.00015 1.44121C10.1362 1.44121 10.3893 1.44938 11.2329 1.48787C12.0129 1.52343 12.4365 1.65376 12.7184 1.76332C13.0918 1.90846 13.3583 2.0818 13.6382 2.36175C13.9182 2.6417 14.0916 2.90822 14.2367 3.28163C14.3463 3.56353 14.4766 3.98715 14.5121 4.76715C14.5506 5.61074 14.5588 5.86377 14.5588 7.99989C14.5588 10.136 14.5506 10.389 14.5121 11.2326C14.4766 12.0126 14.3463 12.4362 14.2367 12.7181C14.0916 13.0916 13.9182 13.3581 13.6382 13.638C13.3583 13.918 13.0918 14.0913 12.7184 14.2365C12.4365 14.346 12.0129 14.4763 11.2329 14.5119C10.3894 14.5504 10.1364 14.5586 8.00013 14.5586C5.86385 14.5586 5.61089 14.5504 4.76739 14.5119C3.98737 14.4763 3.56378 14.346 3.2819 14.2365C2.90844 14.0913 2.64195 13.918 2.36202 13.638C2.08207 13.3581 1.9087 13.0916 1.76356 12.7181C1.654 12.4362 1.5237 12.0126 1.48811 11.2326C1.44962 10.389 1.44145 10.136 1.44145 7.99989C1.44145 5.86377 1.44962 5.61074 1.48811 4.76715C1.5237 3.98713 1.654 3.56353 1.76356 3.28165C1.9087 2.9082 2.08207 2.6417 2.362 2.36178C2.64195 2.0818 2.90846 1.90846 3.28187 1.76332C3.56378 1.65376 3.98739 1.52343 4.76739 1.48787C5.61098 1.44938 5.86402 1.44121 8.00013 1.44121" fill="white"/>
+                            <path d="M8.00077 10.667C6.52795 10.667 5.33403 9.47309 5.33403 8.00032C5.33403 6.5275 6.52795 5.33358 8.00077 5.33358C9.47355 5.33358 10.6675 6.5275 10.6675 8.00032C10.6675 9.47309 9.47355 10.667 8.00077 10.667ZM8.00077 3.89212C5.73185 3.89212 3.89258 5.7314 3.89258 8.00032C3.89258 10.2692 5.73185 12.1085 8.00077 12.1085C10.2696 12.1085 12.1089 10.2692 12.1089 8.00032C12.1089 5.7314 10.2696 3.89212 8.00077 3.89212ZM13.2313 3.72981C13.2313 4.26003 12.8014 4.68982 12.2712 4.68982C11.7411 4.68982 11.3112 4.26003 11.3112 3.72981C11.3112 3.19961 11.7411 2.76978 12.2712 2.76978C12.8014 2.76978 13.2313 3.19961 13.2313 3.72981Z" fill="white"/>
+                        </svg>  
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="flex group bg-btnBg bg-opacity-5 border border-btnBg border-opacity-20 rounded-full w-12 h-12 items-center justify-center hover:bg-primaryColor hover:border-transparent hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.52165 6.77486L15.4777 0H14.066L8.89582 5.88229L4.76436 0H0L6.2466 8.896L0 16H1.41166L6.87244 9.78743L11.2356 16H16L9.52165 6.77486ZM7.58885 8.97371L6.95596 8.088L1.91986 1.04H4.08793L8.15117 6.728L8.78406 7.61371L14.0672 15.008H11.8991L7.58885 8.97371Z" fill="white"/>
+                        </svg>  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- Destination Area Start Here -->
+    <section id="scroll" class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="lg:w-630 w-full mx-auto text-center">
+                <h2 class="font-Inter font-medium md:text-74xl text-46xl leading-56 md:leading-84 text-primaryColor">Our Most Loved <span class="font-Playfair italic">Destinations</span></h2>
+                <p class="font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor md:pt-6 pt-4">Explore some of the world’s most sought-after destinations handpicked by travelers. Each destination offers unique experiences.</p>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="md:mt-[70px] mt-10 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                <div>
+                    <h4 class="font-Inter font-medium text-22xl leading-32 text-primaryColor">Bali, Indonesia</h4>
+                    <img class="w-full my-[15px]" src="assets/img/homePage/destination/destination-1.png" alt="">
+                    <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">A paradise for beach lovers, yoga retreats, and cultural people.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-Inter font-medium text-22xl leading-32 text-primaryColor">Paris, France</h4>
+                    <img class="w-full my-[15px]" src="assets/img/homePage/destination/destination-2.png" alt="">
+                    <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">The city of lights, romance, thrill, adventure, and art.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-Inter font-medium text-22xl leading-32 text-primaryColor">Cape Town, South Africa</h4>
+                    <img class="w-full my-[15px]" src="assets/img/homePage/destination/destination-3.png" alt="">
+                    <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">Where awesome majestic mountains meet the sea.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-Inter font-medium text-22xl leading-32 text-primaryColor">Tokyo, Japan</h4>
+                    <img class="w-full my-[15px]" src="assets/img/homePage/destination/destination-4.png" alt="">
+                    <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">Awesome futuristic landscapes blended with tradition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Destination Area End Here -->
+
+    <!-- Travel Area Start Here -->
+    <section class="bg-cardBg w-auto mx-5 xl:mx-auto lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container xl:px-0">
+            <div class="lg:py-[100px] py-10 flex xl:flex-row flex-col justify-between xl:items-center lg:gap-[75px] gap-10">
+                <img
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="xl:w-630 w-full" src="assets/img/homePage/travel.png" alt="">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="xl:w-585 w-full"> 
+                    <h2 class="font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-primaryColor">Why <span class="font-Playfair italic">Travel</span> with GlobeTrek?</h2>
+                    <p class="font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor pt-6">We bring a wealth of experience, trusted partnerships, and exclusive offerings to ensure every journey is exceptional.</p>
+                    <div class="grid md:grid-cols-2 grid-cols-1 md:gap-[45px] gap-7 md:mt-12 mt-4">
+                        <div>
+                            <h4 class="font-Inter font-medium md:text-24xl text-22xl leading-32 md:leading-34 text-primaryColor">Personalized Itineraries</h4>
+                            <p class="md:pt-4 pt-2 font-Inter font-normal text-base leading-7 text-secondaryColor">Custom-made trips tailored to your preferences and need.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-Inter font-medium md:text-24xl text-22xl leading-32 md:leading-34 text-primaryColor">Exclusive Deals</h4>
+                            <p class="md:pt-4 pt-2 font-Inter font-normal text-base leading-7 text-secondaryColor">Enjoy access to exclusive packages and travel discounts.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-Inter font-medium md:text-24xl text-22xl leading-32 md:leading-34 text-primaryColor">24/7 Support</h4>
+                            <p class="md:pt-4 pt-2 font-Inter font-normal text-base leading-7 text-secondaryColor">We’re here for you around the clock, wherever you are.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-Inter font-medium md:text-24xl text-22xl leading-32 md:leading-34 text-primaryColor">Eco-Friendly Options</h4>
+                            <p class="md:pt-4 pt-2 font-Inter font-normal text-base leading-7 text-secondaryColor">Explore awesome travel with sustainability in mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Area End Here -->
+
+    <!-- Services Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="lg:w-740 w-full mx-auto text-center">
+                <h2 class="font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-primaryColor"><span class="font-Playfair italic">Services </span>to Make Your Trip Effortless</h2>        
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="relative">
+                <hr class="lg:block hidden absolute h-[548px] w-[1px] bg-borderColor left-1/2 transform -translate-x-1/2"/>
+                <hr class="lg:block hidden absolute xl:w-[1290px] w-full bg-borderColor top-1/2 transform -translate-y-1/2"/>
+                <div class="lg:mt-[70px] mt-6 grid lg:grid-cols-2 grid-cols-1">
+                    <div class="lg:py-[45px] py-2 lg:px-[45px]">
+                        <span class="font-Inter font-medium text-22xl leading-32 text-primaryColor">1</span>
+                        <h4 class="lg:pt-11 pt-4 font-Inter font-medium text-22xl leading-32 text-primaryColor">Flight Booking</h4>
+                        <p class="pt-[15px] font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="lg:py-[45px] py-2 lg:px-[45px]">
+                        <span class="font-Inter font-medium text-22xl leading-32 text-primaryColor">2</span>
+                        <h4 class="lg:pt-11 pt-4 font-Inter font-medium text-22xl leading-32 text-primaryColor">Hotel & Accommodation</h4>
+                        <p class="pt-[15px] font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="lg:py-[45px] py-2 lg:px-[45px]">
+                        <span class="font-Inter font-medium text-22xl leading-32 text-primaryColor">3</span>
+                        <h4 class="lg:pt-11 pt-4 font-Inter font-medium text-22xl leading-32 text-primaryColor">Tours & Experiences</h4>
+                        <p class="pt-[15px] font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                    <div class="lg:py-[45px] py-2 lg:px-[45px]">
+                        <span class="font-Inter font-medium text-22xl leading-32 text-primaryColor">4</span>
+                        <h4 class="lg:pt-11 pt-4 font-Inter font-medium text-22xl leading-32 text-primaryColor">Travel Insurance</h4>
+                        <p class="pt-[15px] font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    </div>
+                </div>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="lg:mt-[70px] mt-7 text-center">
+                <a href="#" class="bg-primaryColor text-btnBg text-center md:inline-block block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:bg-btnBg border border-transparent hover:border-borderColor hover:text-primaryColor">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    <!-- Services Area End Here -->
+
+    <!-- Propular Package Trip Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="flex lg:flex-row flex-col justify-between lg:items-end items-center">
+                <h2 class="lg:w-802 w-full font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-primaryColor">Popular<span class="font-Playfair italic"> Packages </span>to Inspire Your Next Trip</h2>        
+                <!-- Navigation buttons and pagination -->
+                <div class="lg:flex hidden justify-between items-center gap-[30px] lg:mt-0 mt-10">
+                    <button class="w-[60px] h-[60px] flex justify-center items-center border border-borderColor rounded-[100px] group hover:bg-primaryColor hover:border-primaryColor hover:transition hover:ease-in-out hover:duration-300" aria-label="Previous slide" id="slider-previous-unique">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1L1 9L9 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white"/>
+                        </svg>
+                    </button>
+                    <button class="w-[60px] h-[60px] flex justify-center items-center group bg-primaryColor rounded-[100px]" aria-label="Next slide" id="slider-next-unique">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L1 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true" 
+            class="overflow-hidden unique lg:mt-[70px] mt-10">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-3 grid-cols-1 gap-[30px]">
+                            <div>
+                                <h4 class="font-Inter font-medium md:text-44xl text-30xl leading-40 md:leading-54 text-primaryColor">Island Escape Package</h4>
+                                <hr class="my-3 border border-borderColor"/>
+                                <p class="font-Inter font-normal text-lg leading-8 text-secondaryColor">Maldives, Bali, Phuket</p>
+                            </div>
+                            <div>
+                                <img class="w-full" src="assets/img/homePage/package.png" alt="">
+                            </div>
+                            <div>
+                                <span class="font-Inter font-normal text-lg leading-8 text-primaryColor">5 Days, 4 Nights</span>
+                                <p class="pt-[15px] font-Inter font-normal text-lg leading-8 text-secondaryColor">Dive into the serene beauty of crystal-clear waters, white sandy beaches, and luxurious resorts. This package is designed for those seeking peace, relaxation, and unparalleled natural beauty.</p>
+                                <div class="flex xl:flex-row lg:flex-col md:flex-row flex-col justify-between xl:items-center lg:items-start md:items-center xl:mt-[155px] mt-10">
+                                    <span class="font-Inter font-medium text-24xl leading-34 text-primaryColor">From $1,299</span>
+                                    <a href="#" class="xl:w-auto w-full md:w-auto xl:mt-0 lg:mt-4 md:mt-0 mt-4 border border-borderColor text-primaryColor text-center xl:inline-block lg:block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:bg-primaryColor hover:border-transparent hover:text-btnBg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-3 grid-cols-1 gap-[30px]">
+                            <div>
+                                <h4 class="font-Inter font-medium md:text-44xl text-30xl leading-40 md:leading-54 text-primaryColor">Island Escape Package</h4>
+                                <hr class="my-3 border border-borderColor"/>
+                                <p class="font-Inter font-normal text-lg leading-8 text-secondaryColor">Maldives, Bali, Phuket</p>
+                            </div>
+                            <div>
+                                <img class="w-full" src="assets/img/homePage/package.png" alt="">
+                            </div>
+                            <div>
+                                <span class="font-Inter font-normal text-lg leading-8 text-primaryColor">5 Days, 4 Nights</span>
+                                <p class="pt-[15px] font-Inter font-normal text-lg leading-8 text-secondaryColor">Dive into the serene beauty of crystal-clear waters, white sandy beaches, and luxurious resorts. This package is designed for those seeking peace, relaxation, and unparalleled natural beauty.</p>
+                                <div class="flex xl:flex-row lg:flex-col md:flex-row flex-col justify-between xl:items-center lg:items-start md:items-center xl:mt-[155px] mt-10">
+                                    <span class="font-Inter font-medium text-24xl leading-34 text-primaryColor">From $1,299</span>
+                                    <a href="#" class="xl:w-auto w-full md:w-auto xl:mt-0 lg:mt-4 md:mt-0 mt-4 border border-borderColor text-primaryColor text-center xl:inline-block lg:block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:bg-primaryColor hover:border-transparent hover:text-btnBg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="grid lg:grid-cols-3 grid-cols-1 gap-[30px]">
+                            <div>
+                                <h4 class="font-Inter font-medium md:text-44xl text-30xl leading-40 md:leading-54 text-primaryColor">Island Escape Package</h4>
+                                <hr class="my-3 border border-borderColor"/>
+                                <p class="font-Inter font-normal text-lg leading-8 text-secondaryColor">Maldives, Bali, Phuket</p>
+                            </div>
+                            <div>
+                                <img class="w-full" src="assets/img/homePage/package.png" alt="">
+                            </div>
+                            <div>
+                                <span class="font-Inter font-normal text-lg leading-8 text-primaryColor">5 Days, 4 Nights</span>
+                                <p class="pt-[15px] font-Inter font-normal text-lg leading-8 text-secondaryColor">Dive into the serene beauty of crystal-clear waters, white sandy beaches, and luxurious resorts. This package is designed for those seeking peace, relaxation, and unparalleled natural beauty.</p>
+                                <div class="flex xl:flex-row lg:flex-col md:flex-row flex-col justify-between xl:items-center lg:items-start md:items-center xl:mt-[155px] mt-10">
+                                    <span class="font-Inter font-medium text-24xl leading-34 text-primaryColor">From $1,299</span>
+                                    <a href="#" class="xl:w-auto w-full md:w-auto xl:mt-0 lg:mt-4 md:mt-0 mt-4 border border-borderColor text-primaryColor text-center xl:inline-block lg:block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:bg-primaryColor hover:border-transparent hover:text-btnBg">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Navigation buttons and pagination -->
+            <div class="flex lg:hidden justify-center items-center gap-[30px] lg:mt-0 mt-10">
+                <button class="w-[60px] h-[60px] flex justify-center items-center border border-borderColor rounded-[100px] group hover:bg-primaryColor hover:border-primaryColor hover:transition hover:ease-in-out hover:duration-300" aria-label="Previous slide" id="slider-previous-unique">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9L9 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white"/>
+                    </svg>
+                </button>
+                <button class="w-[60px] h-[60px] flex justify-center items-center group bg-primaryColor rounded-[100px]" aria-label="Next slide" id="slider-next-unique">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9L1 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Propular Package Trip Area End Here -->
+
+    <!-- Travelers Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10 xl:mx-auto w-auto mx-5 bg-cardBg">
+        <div class="container">
+            <div class="lg:py-[100px] py-10">
+                <h2
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="lg:w-740 w-full mx-auto text-center font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-primaryColor">Hear from Our<span class="font-Playfair italic"> Happy </span>Travelers</h2>        
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="lg:mt-[70px] mt-7 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+                    <div class="md:pt-[285px] pt-32 pb-5 px-5 w-full rounded-R_30 bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/travelers/traveler-1.png');">
+                        <div class="bg-white p-5 rounded-R_15">
+                            <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">I’ve traveled with many agencies, but the personalized attention I received here was unbeatable and awesome.</p>
+                            <h4 class="pt-6 font-Inter font-medium text-base leading-7 text-primaryColor">Emily Anderson</h4>
+                            <span class="font-Inter font-normal text-sm leading-6 text-secondaryColor">Traveler</span>
+                        </div>
+                    </div>  
+                    
+                    <div class="md:pt-[285px] pt-32 pb-5 px-5 w-full rounded-R_30 bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/travelers/traveler-2.png');">
+                        <div class="bg-white p-5 rounded-R_15">
+                            <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">GlobeTrek planned the perfect honeymoon for us. From start to finish, everything was flawless and amazing!</p>
+                            <h4 class="pt-6 font-Inter font-medium text-base leading-7 text-primaryColor">James Anderson</h4>
+                            <span class="font-Inter font-normal text-sm leading-6 text-secondaryColor">Traveler</span>
+                        </div>
+                    </div>
+
+                    <div class="md:pt-[285px] pt-32 pb-5 px-5 w-full rounded-R_30 bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/homePage/travelers/traveler-3.png');">
+                        <div class="bg-white p-5 rounded-R_15">
+                            <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">The trip was a dream come true! Everything was so well organized, from the flights to the hotel.</p>
+                            <h4 class="pt-6 font-Inter font-medium text-base leading-7 text-primaryColor">Sarah Anderson</h4>
+                            <span class="font-Inter font-normal text-sm leading-6 text-secondaryColor">Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travelers Area End Here -->
+
+    <!-- FAQ Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container">
+            <div class="flex xl:flex-row flex-col justify-between items-start">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="xl:w-630 w-full">
+                    <h2 class="font-Inter text-primaryColor font-medium md:text-74xl text-40xl leading-50 md:leading-84">FAQs</h2>
+                    <p class="lg:w-520 w-full pt-4 font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Everything you need to know about the travel & tourism. Can’t find the answer you’re looking for? Please chat to our friendly team.</p>      
+                    <a href="contact.html" class="mt-6 font-Inter inline-block text-center font-medium text-lg leading-8 transition ease-in-out duration-500 hover:scale-105 hover:underline hover:transition hover:ease-in-out hover:duration-500">Contact us</a>
+                </div>
+                <div class="xl:w-585 w-full xl:mt-0 mt-10">
+                    <div class=" overflow-hidden">
+                        <div x-data="{ openTab: 2, faqData: [
+                            {
+                                id: 1,
+                                question: 'What if I need to make changes to my booking?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 2,
+                                question: 'Are there any hidden fees?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 3,
+                                question: 'Can I customize my itinerary?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 4,
+                                question: 'Do you offer travel insurance?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 5,
+                                question: 'What COVID-19 precautions are in place?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            
+                            
+                        ] }">
+                            <template x-for="(faq, index) in faqData" :key="index">
+                                <div data-aos="fade-down" data-aos-duration="1000" data-aos-offset="20" data-aos-once="true" class="py-7 border-b border-b-borderColor">
+                                    <div @click="openTab === faq.id ? openTab = -1 : openTab = faq.id" class="w-full text-left flex justify-between md:items-center cursor-pointer transition-colors duration-300 gap-8">
+                                        <!-- Change text color dynamically based on openTab -->
+                                        <h6 x-text="faq.question" class="md:w-auto w-[290px] font-semibold font-Inter md:text-24xl text-lg leading-8 md:leading-34 text-primaryColor"></h6> 
+                                        <div x-show="openTab === faq.id">
+                                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 7L7 1L13 7" stroke="#04225E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div x-show="openTab !== faq.id">
+                                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L7 7L13 1" stroke="#04225E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div x-show="openTab === faq.id" class="md:pt-6 pt-3 transition-all duration-300 lg:w-[543px] w-full">
+                                        <p class="text-secondaryColor lg:text-lg text-base font-Inter text-left font-normal leading-8" x-html="faq.answer"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Area End Here -->
+
+    <!-- Promo Area Start Here -->
+    <section
+    data-aos="fade-down"
+    data-aos-duration="1000"
+    data-aos-offset="20"
+    data-aos-once="true" 
+    class="lg:mt-[150px] md:mt-20 mt-10 xl:mx-auto w-auto mx-5 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/img/homePage/promo.png');">
+        <div class="container">
+            <div class="lg:pt-[298px] pt-10 lg:pb-[100px] pb-16 lg:w-740 w-full mx-auto text-center">
+                <h2 class="font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-btnBg">Ready to<span class="font-Playfair italic"> Plan </span>Your Next Trip?</h2>   
+                <p class="md:w-520 w-full mx-auto font-Inter font-normal text-lg leading-8 text-btnBg pt-6">From scenic escapes to exotic journeys, we craft unforgettable experiences tailored to you.</p>     
+                <a href="package.html" class="md:mt-12 mt-7 bg-btnBg text-primaryColor text-center md:inline-block block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 border border-btnBg hover:bg-opacity-5 hover:border-btnBg hover:border-opacity-20 hover:text-white hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">Explore Packages</a>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Area Start Here -->
+
+
+    <!-- Footer Area Start Here -->
+    <footer class="lg:mt-[150px] md:mt-20 mt-10 mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true" 
+        class="container xl:px-0">
+            <div class="flex items-start md:flex-row flex-col justify-between xl:gap-[364px] md:gap-[100px] gap-10">
+                <div class="md:hidden block">
+                    <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Home</a></li>
+                        <li class="pt-[15px]"><a href="about.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">About Us</a></li>
+                        <li class="pt-[15px]"><a href="package.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Packages</a></li>
+                        <li class="pt-[15px]"><a href="blog.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Blog</a></li>
+                        <li class="pt-[15px]"><a href="contact.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Follow Us</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">Facebook, Instagram, X</h4>
+                    </div>
+                    <div class="md:mt-10 mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Office</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">123 Travel Avenue <br/> Blissville, Serenity City, 45678</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Email</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">traveldemo@gmail</h4>
+                    </div>
+                    <div class="mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Phone</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">+1 234 567 910</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[70px] md:block hidden">
+                <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+            </div>
+            <hr class="border-b border-b-borderColor my-[30px]" />
+            <div class="flex md:flex-row flex-col justify-between items-center md:gap-0 gap-4">
+                <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">&copy;2024 Company All rights reserved.</p>
+                <a href="" class="font-Inter font-normal text-base leading-7 text-secondaryColor">Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+    
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+    
+</body>
+</html>

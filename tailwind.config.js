@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}"],
+  theme: {
+    // Disable default container sizes
+    container: {
+      // Default values will be overridden
+      center: true,
+      padding: '0',
+    },
+    extend: {
+      container: {
+        center: true, 
+        padding:'18px',
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "100%",
+          xl: "1290px",
+        },
+      },
+      fontFamily:{
+        "Playfair": ["Playfair Display", "serif"],
+        "Inter": ["Inter", "serif"],
+      },
+      spacing:{
+        '300':'300px',
+        '410':'410px',
+        '520':'520px',
+        '555':'555px',
+        '585':'585px',
+        '630':'630px',
+        '740':'740px',
+        '802':'802px',
+        '850':'850px',
+      },
+      fontSize:{
+        '22xl':'22px',
+        '24xl': '24px',
+        '26xl': '26px',
+        '28xl':'28px',
+        '30xl': '30px',
+        '36xl':'36px',
+        '40xl':'40px',
+        '42xl':'42px',
+        '44xl':'44px',
+        '46xl':'46px',
+        '50xl':'50px',
+        '60xl':'60px',
+        '74xl':'74px',
+        '94xl':'94px',
+        '261xl':'261px',
+      },
+      lineHeight: {
+        '8': '30px',
+        '32':'32px',
+        '34':'34px',
+        '38':'38px',
+        '40':'40px',
+        '42':'42px',
+        '44':'44px',
+        '50':'50px',
+        '52':'52px',
+        '54':'54px',
+        '56':'56px',
+        '64':'64px',
+        '84':'84px',
+        '104':'104px',
+        '315':'315px',
+      },
+      colors:{
+        'primaryColor':'#000000',
+        'secondaryColor':'#515151',
+        'btnBg':'#FFFFFF',
+        'cardBg':'#F4F4F4',
+        'borderColor':'#D9D9D9',
+      },
+      borderRadius:{
+        'R_15':"15px",
+        'R_30':"30px",
+        'R_100':"100px",
+      },
+    },
+  },
+  plugins: [],
+}

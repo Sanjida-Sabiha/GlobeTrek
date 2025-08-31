@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrek || Blog Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hidden lg:flex justify-between items-center my-5">
+                    <ul class="w-[325px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="index.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Home</a></li>
+                        <li><a href="about.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">About Us</a></li>
+                        <li><a href="package.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Packages</a></li>
+                    </ul>
+                    <a href="index.html" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <ul class="w-[270px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="blog.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Blog</a></li>
+                        <li><a href="faq.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">FAQs</a></li>
+                        <li><a href="contact.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden flex justify-between items-center mt-5">
+                    <a href="index.html" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center lg:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="black">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div id="mobileMenu" class="border-b border-b-gray-50 hidden rounded m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-12 z-20 bg-cardBg">
+                        <div class="py-5">
+                            <ul class="dropdown flex flex-col gap-y-4 px-5">
+                                <li><a href="index.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Home</a></li>
+                                <li><a href="about.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">About Us</a></li>
+                                <li><a href="package.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Packages</a></li>
+                                <li><a href="blog.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Blog</a></li>
+                                <li><a href="faq.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">FAQs</a></li>
+                                <li><a href="contact.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- Banner Area Start Here -->
+    <section class="lg:mt-[100px] mt-10">
+        <div class="container">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="xl:w-[668px] w-auto mx-auto text-center">
+                <h1 class="font-Inter font-medium lg:text-94xl md:text-74xl text-40xl leading-50 md:leading-84 lg:leading-104 text-primaryColor">Our<span class="font-Playfair italic"> Blog </span></h1>
+                <p class="md:pt-10 pt-4 font-Inter font-normal text-lg leading-8 text-secondaryColor">Discover our specially curated travel packages designed to create <br/> unforgettable experiences.</p>
+                <div class="mt-10 lg:w-520 w-full mx-auto">
+                    <form class="flex md:flex-row flex-col justify-between items-center lg:gap-0 gap-5">
+                        <input class="lg:w-[323px] w-full border border-borderColor focus:outline-none py-[15px] px-[25px] rounded-[500px] font-Inter font-normal text-lg leading-8 text-secondaryColor placeholder:text-lg placeholder:leading-8 placeholder:text-secondaryColor" type="email" placeholder="Email address">    
+                        <button onclick="event.preventDefault()" class="bg-primaryColor text-btnBg text-center md:inline-block block md:w-auto w-full py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 hover:bg-btnBg border border-transparent hover:border-borderColor hover:text-primaryColor">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End Here -->
+
+    <!-- Feature Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container xl:px-0">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            >
+                <h4 class="font-medium font-Inter text-24xl leading-34 text-primaryColor">Featured <span class="font-Playfair italic">Blogs</span></h4>
+            </div>
+            <div class="flex xl:flex-row flex-col justify-between xl:items-center mt-[30px] xl:gap-[75px] gap-4">
+                <img
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="xl:w-630 w-full" src="assets/img/blogPage/blog-1.png" alt="">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="xl:w-585 w-full">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium lg:text-[54px] text-36xl leading-[46px] lg:leading-64 text-primaryColor">Top 10 Bucket List Destinations</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Discover the must-visit places around the world that should be on every traveler’s bucket list. From stunning beaches to bustling cities, start planning your next adventure today!</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex xl:flex-row flex-col-reverse justify-between xl:items-center mt-[45px] xl:gap-[75px] gap-4">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="xl:w-585 w-full">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium lg:text-[54px] text-36xl leading-[46px] lg:leading-64 text-primaryColor">The Ultimate Packing Guide for Every Trip</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Packing doesn’t have to be stressful! Check out our essential tips and tricks to pack efficiently, save space, and make sure you have everything you need for your journey.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <img
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true"
+                class="xl:w-630 w-full" src="assets/img/blogPage/blog-2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Feature Area End Here -->
+
+    <!-- Latest Blog Area Start Here -->
+    <section class="lg:mt-[150px] md:mt-20 mt-10">
+        <div class="container xl:px-0">
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            >
+                <h4 class="font-medium font-Inter text-24xl leading-34 text-primaryColor">Latest <span class="font-Playfair italic">Blogs</span></h4>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="grid lg:grid-cols-2 grid-cols-1 gap-[30px] mt-[30px]">
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-3.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Budget Travel Tips for Exploring the World</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Traveling on a budget? Learn how to make the most of your money with practical advice for affordable accommodations, local eats, and hidden gems.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-4.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Family-Friendly Destinations for Vacations</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Planning a family trip? Discover destinations and activities that are fun for everyone, ensuring an unforgettable adventure for kids and adults alike.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-5.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Solo Travel: Tips for a Safe and Empowering Journey</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Embrace the freedom of solo travel! Get essential tips for safe exploration, making friends on the road, and creating memories that are truly yours.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-6.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">How to Find Authentic Food Experiences Abroad</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Dive into the local culture by tasting authentic dishes wherever you go. Learn how to find the best eateries, local markets, and food tours in any destination.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-[45px]">
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-7.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Top Beach Destinations for Every Season in 2024</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Beach lovers, rejoice! From sunny shores to hidden coves, find out where to head for the perfect beach vacation, no matter the time of year.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-8.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Exploring Nature: Best Hiking Trails Around the World</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Nature enthusiasts, this one’s for you! Discover breathtaking hiking trails that showcase the beauty of landscapes from mountains to forests.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-9.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Travel Essentials: Must-Have Gear for Every Adventure</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Make sure you’re always prepared! From backpacks to cameras, explore the gear that will make your travels smoother, safer, and more enjoyable.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-10.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Exploring the Wonders of World Heritage Sites</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Visit the world’s most iconic heritage sites that capture the essence of different cultures and histories. Discover the stories.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-11.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">How to Plan the Perfect Romantic Getaway 2024</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Planning a romantic escape? From cozy retreats to adventurous destinations, find tips on creating a memorable experience with your loved one.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div>
+                    <img class="w-full" src="assets/img/blogPage/blog-12.png" alt="">
+                    <span class="font-Inter font-normal text-base leading-7 text-secondaryColor mt-[30px] block">Guides</span>
+                    <h4 class="pt-[15px] font-Inter font-medium text-24xl leading-34 text-primaryColor">Top Tips for Sustainable and Responsible Travel</h4>
+                    <p class="font-Inter font-normal text-base leading-7 pt-[15px] text-secondaryColor">Travel responsibly with our tips on eco-friendly practices, supporting local communities, and reducing your environmental impact while exploring the world.</p>
+                    <a href="blog-post.html" class="group mt-[30px] flex items-center gap-3 font-Inter font-semibold text-base leading-7 text-primaryColor">
+                        Learn More
+                        <svg class="transition ease-in-out duration-500 group-hover:transform group-hover:translate-x-3 group-hover:transition group-hover:duration-500 group-hover:ease-in-out" width="16" height="14" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 8H1M15 8L8 1M15 8L8 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Pagination Area Start -->
+            <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-offset="20"
+            data-aos-once="true"
+            class="lg:mt-[70px] mt-10">
+                <ul class="flex justify-center gap-4">
+                    <li class=" hidden group py-2.5 px-5 rounded-[500px] border border-borderColor hover:border-primaryColor hover:bg-primaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 md:flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="flex gap-2 items-center font-Inter font-medium text-sm leading-6 text-borderColor group-hover:text-white transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500">  
+                            <svg class="text-secondaryColor group-hover:text-primaryColor" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1L1 6L6 11" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500"/>
+                            </svg>
+                            Previous
+                        </a>
+                    </li>
+                    <li class="group h-12 w-12 rounded-[500px] bg-primaryColor hover:border hover:border-borderColor hover:bg-transparent flex items-center justify-center transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">
+                        <a href="blog-post.html" class="font-Inter font-medium text-sm leading-6 text-white group-hover:text-primaryColor">1</a>
+                    </li>
+                    <li class="group h-12 w-12 rounded-[500px] border border-borderColor hover:border-primaryColor hover:bg-primaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="blog-post.html" class="font-Inter font-medium text-sm leading-6 text-primaryColor group-hover:text-white">2</a>
+                    </li>
+                    <li class="group py-2.5 px-5 rounded-[500px] border border-borderColor hover:border-primaryColor hover:bg-primaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="font-Inter font-medium text-sm leading-6 text-primaryColor group-hover:text-white">...</a>
+                    </li>
+                    <li class="group hidden py-2.5 px-5 rounded-[500px] border border-borderColor hover:border-primaryColor hover:bg-primaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 md:flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="font-Inter font-medium text-sm leading-6 text-primaryColor group-hover:text-white">10</a>
+                    </li>
+                    <li class="group py-2.5 px-5 rounded-[500px] border border-borderColor hover:border-primaryColor hover:bg-primaryColor transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500 flex items-center justify-center">
+                        <a href="#" onclick="event.preventDefault()" class="flex gap-2 items-center font-Inter font-medium text-sm leading-6 text-primaryColor group-hover:text-white transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500">
+                            Next 
+                            <svg class="text-primaryColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M9 18l8.5-6L9 6l1.5-1.5L20 12l-9.5 7.5L9 18z" fill="#04225E"  class="group-hover:fill-white transition ease-in-out duration-500 group-hover:transition group-hover:ease-in-out group-hover:duration-500"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Pagination Area End -->
+        </div>
+    </section>
+    <!-- Latest Blog Area End Here -->
+
+
+    <!-- Footer Area Start Here -->
+    <footer class="lg:mt-[150px] md:mt-20 mt-10 mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true" 
+        class="container xl:px-0">
+            <div class="flex items-start md:flex-row flex-col justify-between xl:gap-[364px] md:gap-[100px] gap-10">
+                <div class="md:hidden block">
+                    <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Home</a></li>
+                        <li class="pt-[15px]"><a href="about.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">About Us</a></li>
+                        <li class="pt-[15px]"><a href="package.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Packages</a></li>
+                        <li class="pt-[15px]"><a href="blog.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Blog</a></li>
+                        <li class="pt-[15px]"><a href="contact.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Follow Us</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">Facebook, Instagram, X</h4>
+                    </div>
+                    <div class="md:mt-10 mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Office</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">123 Travel Avenue <br/> Blissville, Serenity City, 45678</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Email</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">traveldemo@gmail</h4>
+                    </div>
+                    <div class="mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Phone</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">+1 234 567 910</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[70px] md:block hidden">
+                <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+            </div>
+            <hr class="border-b border-b-borderColor my-[30px]" />
+            <div class="flex md:flex-row flex-col justify-between items-center md:gap-0 gap-4">
+                <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">&copy;2024 Company All rights reserved.</p>
+                <a href="" class="font-Inter font-normal text-base leading-7 text-secondaryColor">Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+    
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+</body>
+</html>

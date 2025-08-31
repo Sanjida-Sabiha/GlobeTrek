@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrek || FAQ Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <!-- Header Area Start Here -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="hidden lg:flex justify-between items-center my-5">
+                    <ul class="w-[325px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="index.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Home</a></li>
+                        <li><a href="about.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">About Us</a></li>
+                        <li><a href="package.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Packages</a></li>
+                    </ul>
+                    <a href="index.html" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <ul class="w-[270px] flex items-center justify-end gap-[30px] menu">
+                        <li><a href="blog.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Blog</a></li>
+                        <li><a href="faq.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">FAQs</a></li>
+                        <li><a href="contact.html" class="font-Inter text-base leading-7 text-secondaryColor font-normal">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lg:hidden flex justify-between items-center mt-5">
+                    <a href="index.html" class="font-Inter font-semibold text-24xl leading-44">GlobeTrek</a>
+                    <!-- Menu button for mobile -->
+                    <div class="flex items-center lg:hidden sm:block">
+                        <button id="mobileMenuButton" class="focus:outline-none">
+                            <svg id="menuIcon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="black">
+                                <path id="menuOpenIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                <path id="menuCloseIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div id="mobileMenu" class="border-b border-b-gray-50 hidden rounded m-5 transition-height transition-all duration-1000 ease-in-out overflow-hidden absolute inset-x-0 top-12 z-20 bg-cardBg">
+                        <div class="py-5">
+                            <ul class="dropdown flex flex-col gap-y-4 px-5">
+                                <li><a href="index.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Home</a></li>
+                                <li><a href="about.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">About Us</a></li>
+                                <li><a href="package.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Packages</a></li>
+                                <li><a href="blog.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Blog</a></li>
+                                <li><a href="faq.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">FAQs</a></li>
+                                <li><a href="contact.html" class="font-Inter text-lg leading-8 text-secondaryColor font-normal">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+    <!-- FAQ Area Start Here -->
+    <section class="lg:mt-[100px] mt-10">
+        <div class="container">
+            <div class="flex xl:flex-row flex-col justify-between items-start">
+                <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="20"
+                data-aos-once="true" 
+                class="xl:w-630 w-full">
+                    <h2 class="font-Inter text-primaryColor font-medium md:text-74xl text-40xl leading-50 md:leading-84">FAQs</h2>
+                    <p class="xl:w-520 w-full pt-4 font-Inter font-normal md:text-lg text-base leading-7 md:leading-8 text-secondaryColor">Everything you need to know about the travel & tourism. Can’t find the answer you’re looking for? Please chat to our friendly team.</p>      
+                    <a href="contact.html" class="mt-6 font-Inter inline-block text-center font-medium text-lg leading-8 transition ease-in-out duration-500 hover:scale-105 hover:underline hover:transition hover:ease-in-out hover:duration-500">Contact us</a>
+                </div>
+                <div class="xl:w-585 w-full xl:mt-0 mt-10">
+                    <div class=" overflow-hidden">
+                        <div x-data="{ openTab: 2, faqData: [
+                            {
+                                id: 1,
+                                question: 'What if I need to make changes to my booking?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 2,
+                                question: 'Are there any hidden fees?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 3,
+                                question: 'Can I customize my itinerary?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 4,
+                                question: 'Do you offer travel insurance?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            {
+                                id: 5,
+                                question: 'What COVID-19 precautions are in place?',
+                                answer: 'No, we believe in transparent pricing. All costs will be presented upfront, and we’ll guide you through any additional services that may apply.'
+                            },
+                            
+                            
+                        ] }">
+                            <template x-for="(faq, index) in faqData" :key="index">
+                                <div data-aos="fade-down" data-aos-duration="1000" data-aos-offset="20" data-aos-once="true" class="py-7 border-b border-b-borderColor">
+                                    <div @click="openTab === faq.id ? openTab = -1 : openTab = faq.id" class="w-full text-left flex justify-between md:items-center cursor-pointer transition-colors duration-300 gap-8">
+                                        <!-- Change text color dynamically based on openTab -->
+                                        <h6 x-text="faq.question" class="md:w-auto w-[290px] font-semibold font-Inter md:text-24xl text-lg leading-8 md:leading-34 text-primaryColor"></h6> 
+                                        <div x-show="openTab === faq.id">
+                                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 7L7 1L13 7" stroke="#04225E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div x-show="openTab !== faq.id">
+                                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L7 7L13 1" stroke="#04225E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div x-show="openTab === faq.id" class="md:pt-6 pt-3 transition-all duration-300 lg:w-[543px] w-full">
+                                        <p class="text-secondaryColor lg:text-lg text-base font-Inter text-left font-normal leading-8" x-html="faq.answer"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Area End Here -->
+
+    <!-- Promo Area Start Here -->
+    <section
+    data-aos="fade-down"
+    data-aos-duration="1000"
+    data-aos-offset="20"
+    data-aos-once="true" 
+    class="lg:mt-[150px] md:mt-20 mt-10 xl:mx-auto w-auto mx-5 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/img/homePage/promo.png');">
+        <div class="container">
+            <div class="lg:pt-[298px] pt-10 lg:pb-[100px] pb-16 lg:w-740 w-full mx-auto text-center">
+                <h2 class="font-Inter font-medium md:text-74xl text-40xl leading-50 md:leading-84 text-btnBg">Ready to<span class="font-Playfair italic"> Plan </span>Your Next Trip?</h2>   
+                <p class="md:w-520 w-full mx-auto font-Inter font-normal text-lg leading-8 text-btnBg pt-6">From scenic escapes to exotic journeys, we craft unforgettable experiences tailored to you.</p>     
+                <a href="package.html" class="md:mt-12 mt-7 bg-btnBg text-primaryColor text-center md:inline-block block py-[15px] px-[45px] rounded-R_100 font-Inter font-medium text-lg leading-8 border border-btnBg hover:bg-opacity-5 hover:border-btnBg hover:border-opacity-20 hover:text-white hover:transition hover:ease-in-out hover:duration-500 transition ease-in-out duration-500">Explore Packages</a>
+            </div>
+        </div>
+    </section>
+    <!-- Promo Area Start Here -->
+
+
+    <!-- Footer Area Start Here -->
+    <footer class="lg:mt-[150px] md:mt-20 mt-10 mb-[30px]">
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-offset="20"
+        data-aos-once="true" 
+        class="container xl:px-0">
+            <div class="flex items-start md:flex-row flex-col justify-between xl:gap-[364px] md:gap-[100px] gap-10">
+                <div class="md:hidden block">
+                    <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Home</a></li>
+                        <li class="pt-[15px]"><a href="about.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">About Us</a></li>
+                        <li class="pt-[15px]"><a href="package.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Packages</a></li>
+                        <li class="pt-[15px]"><a href="blog.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Blog</a></li>
+                        <li class="pt-[15px]"><a href="contact.html" class="font-Inter font-medium text-xl leading-8 text-primaryColor hover:underline  hover:underline-offset-[3px] transition ease-in-out duration-500 hover:transition hover:ease-in-out hover:duration-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Follow Us</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">Facebook, Instagram, X</h4>
+                    </div>
+                    <div class="md:mt-10 mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Office</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">123 Travel Avenue <br/> Blissville, Serenity City, 45678</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Email</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">traveldemo@gmail</h4>
+                    </div>
+                    <div class="mt-4">
+                        <span class="font-Inter font-normal text-base leading-7 text-secondaryColor">Phone</span>
+                        <h4 class="pt-[15px] font-Inter font-medium text-xl leading-8 text-primaryColor">+1 234 567 910</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[70px] md:block hidden">
+                <a href="index.html"><img src="assets/img/GlobeTrek.png" alt=""></a>
+            </div>
+            <hr class="border-b border-b-borderColor my-[30px]" />
+            <div class="flex md:flex-row flex-col justify-between items-center md:gap-0 gap-4">
+                <p class="font-Inter font-normal text-base leading-7 text-secondaryColor">&copy;2024 Company All rights reserved.</p>
+                <a href="" class="font-Inter font-normal text-base leading-7 text-secondaryColor">Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+    
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/aos_script.js"></script>
+</body>
+</html>
